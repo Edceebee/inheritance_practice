@@ -1,6 +1,6 @@
 package Inheritance;
 
-public class Main {
+public class NonsoPorscheMain {
     public static void main(String[] args) {
 
         Car newCar = new Car("car", 4, 500, 3, "good", "good", "one",4, 2, 4, 6);
