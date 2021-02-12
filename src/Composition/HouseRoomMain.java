@@ -7,7 +7,10 @@ public class HouseRoomMain {
         HouseRoom newRoom = new HouseRoom("chair", "table", "fan", "television", "bed", "cupboard");
         Television newTv = new Television();
 
-        newRoom.CalculateAreaOfRoom(3,6);
+        newRoom.CalculateAreaOfRoom(4,6);
         //newRoom.getTelevision();
+        newTv.setSize(3, 9);
+        newTv.getSize();
+        newRoom.CalculateAreaOfRoom(2,4);
     }
 }

@@ -31,10 +31,13 @@ public class HouseRoom {
 
     }
 
-   public int CalculateAreaOfRoom(int length, int width){
+   public byte CalculateAreaOfRoom(int length, int width){
         int size = length * width;
-        return size;
-    }
+        //return size;
+       System.out.println("the size of the room is: " + size);
+       //return size;
+       return (byte) size;
+   }
 
     public String getChair() {
         return chair;
