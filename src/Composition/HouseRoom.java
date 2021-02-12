@@ -8,18 +8,15 @@ package Composition;
 // then add at least one method to hide the object (i.e not using a getter)
 // but to access the object used in composition within the main class
 
-
-
-
 public class HouseRoom {
     private String chair;
     private  String table;
     private String fan;
-    private String television;
+    private Television television;
     private  String bed;
     private  String cupBoard;
 
-    public HouseRoom(String chair, String table, String fan, String television, String bed, String cupBoard) {
+    public HouseRoom(String chair, String table, String fan, Television television, String bed, String cupBoard) {
 
         this.chair = chair;
         this.table = table;
@@ -28,5 +25,62 @@ public class HouseRoom {
         this.bed = bed;
         this.cupBoard = cupBoard;
     }
+    public HouseRoom() {}
 
+    public HouseRoom(String chair, String table, String fan, String television, String bed, String cupBoard) {
+
+    }
+
+   public int CalculateAreaOfRoom(int length, int width){
+        int size = length * width;
+        return size;
+    }
+
+    public String getChair() {
+        return chair;
+    }
+
+    public void setChair(String chair) {
+        this.chair = chair;
+    }
+
+    public void setTable(String table) {
+        this.table = table;
+    }
+
+    public void setFan(String fan) {
+        this.fan = fan;
+    }
+
+    public void setTelevision(String name, String size, String model) {
+        this.television = television;
+    }
+
+    public void setBed(String bed) {
+        this.bed = bed;
+    }
+
+    public void setCupBoard(String cupBoard) {
+        this.cupBoard = cupBoard;
+    }
+
+    public String getTable() {
+        return table;
+    }
+
+    public String getFan() {
+        return fan;
+    }
+
+    public Television getTelevision() {
+        return television;
+    }
+
+    public String getBed() {
+        return bed;
+    }
+
+    public String getCupBoard() {
+        return cupBoard;
+    }
 }
