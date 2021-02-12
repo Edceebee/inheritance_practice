@@ -53,8 +53,8 @@ class GeneralTest {
         // given that
         HouseRoom newRoom = new HouseRoom();
         // when
-        newRoom.setChair("cool nice chair");
-        assertEquals("cool nice chair", newRoom.getChair());
+        newRoom.setFan("binatone");
+        assertEquals("binatone", newRoom.getFan());
     }
 
     @Test
