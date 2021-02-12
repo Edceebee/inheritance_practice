@@ -25,7 +25,7 @@ public class HouseRoom {
         this.bed = bed;
         this.cupBoard = cupBoard;
     }
-    public HouseRoom() {}
+   public HouseRoom() {}
 
     public HouseRoom(String chair, String table, String fan, String television, String bed, String cupBoard) {
 
