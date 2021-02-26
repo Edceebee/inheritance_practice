@@ -75,8 +75,8 @@ public class HouseRoom {
         return fan;
     }
 
-    public Television getTelevision() {
-        return television;
+    public <Television> Television getTelevision() {
+        return (Television) television;
     }
 
     public String getBed() {
