@@ -17,7 +17,7 @@ public class ReverseArrayChallenge {
         reverse(array);
         System.out.println();
         max(array);
-        //System.out.println();
+
         min(array);
 
     }
@@ -32,7 +32,7 @@ public class ReverseArrayChallenge {
         //Loop through the array in reverse order
         for (int i = array.length-1; i >= 0; i--) {
             System.out.print(array[i] + " ");
-//            System.out.println();
+
         }
     }
 
@@ -40,7 +40,7 @@ public class ReverseArrayChallenge {
         int max = 0;
 
         for(int i=0; i<array.length; i++ ) {
-            if(array[i]>max) {
+            if(array[i] > max) {
                 max = array[i];
             }
 
