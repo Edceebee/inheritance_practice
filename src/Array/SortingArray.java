@@ -11,32 +11,58 @@ package Array;
  */
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
+
+
 
 public class SortingArray {
 
     private static Scanner input = new Scanner(System.in);
-    private static int capacity;
 
 
     public static void main(String[] args) {
+        
+        Integer [] myArray = getElements(5);
 
-        int myIntegers[] = new int[capacity];
-        System.out.println("Enter capacity of array");
-        capacity = input.nextInt();
+        System.out.println();
 
-        printArray(myIntegers);
+
+        printArray(myArray);
+        sortArray(myArray);
+    
     }
 
-    private static void printArray(int[] newArray) {
-        newArray = new int[5];
-        int i;
-        for (i = 0; i <= newArray.length; i++) {
-            System.out.println("Elements" + i + "contents" + newArray[i]);
-            newArray[i] = input.nextInt();
+    private static void sortArray(Integer[] array) {
+        Arrays.sort(array, Collections.reverseOrder());
+
+        System.out.printf("Sorted Array is : %s",
+                Arrays.toString(array));
+
+
+    }
+
+
+    private static void printArray(Integer[] array) {
+        for(int i=0; i < array.length; i++ ){
+            System.out.println("Element " + i + " value was " + array[i]);
         }
-        System.out.println(Arrays.toString(newArray));
+        System.out.printf("Elements in the array is : %s",
+                Arrays.toString(array));
+        System.out.println();
+
     }
+
+    private static Integer[] getElements(int number) {
+        System.out.println("Enter " + number + " integer values. \r");
+        Integer[] values = new Integer[number];
+
+        for(int i=0; i< values.length; i++){
+            values[i] = input.nextInt();
+        }
+        return values;
+    }
+
 
 
 }
